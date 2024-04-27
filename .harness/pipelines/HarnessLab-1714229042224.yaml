@@ -20,19 +20,14 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: echo
-                  name: echo
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
                   spec:
-                    command: echo hello world
-                  timeout: ""
-                  type: Run
-              - step:
-                  type: Run
-                  name: build
-                  identifier: build
-                  spec:
-                    shell: Bash
-                    command: python3 hello.py
+                    connectorRef: account.harnessImage
+                    repo: awesley/helloharness
+                    tags:
+                      - hello
           platform:
             os: Linux
             arch: Amd64
