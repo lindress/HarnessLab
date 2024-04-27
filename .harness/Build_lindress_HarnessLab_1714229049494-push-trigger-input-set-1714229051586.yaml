@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_lindress_HarnessLab_1714229049494-push-trigger-input-set
+  identifier: Build_lindress_HarnessLab_1714229049494pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_lindress_HarnessLab_1714229049494
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
