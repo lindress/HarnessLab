@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: harness-lab
+spec:
+  replicas: 3
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: harness-lab
+  template:
+    metadata:
+      labels:
+        app: harness-lab
+    spec:
+      containers:
+      - image: alpine:latest
+        name: harness-lab
+        ports:
+        - containerPort: 80

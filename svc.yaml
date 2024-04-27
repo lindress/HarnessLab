@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: harness-lab
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: harness-lab
