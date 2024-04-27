@@ -32,7 +32,7 @@ pipeline:
                   identifier: build
                   spec:
                     shell: Bash
-                    command: ./hello.py
+                    command: python3 hello.py
           platform:
             os: Linux
             arch: Amd64
