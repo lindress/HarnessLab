@@ -41,3 +41,10 @@ pipeline:
             spec: {}
         type: CI
         description: ""
+    - stage:
+        name: deploy
+        identifier: deploy
+        tags: {}
+        template:
+          templateRef: Deploy_Template
+          versionLabel: "0.1"
