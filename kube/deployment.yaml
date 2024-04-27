@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: harness-lab
 spec:
-  replicas: 3
+  replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
         app: harness-lab
     spec:
       containers:
-      - image: alpine:latest
+      - image: helloHarness:1.0
         name: harness-lab
         ports:
         - containerPort: 80
