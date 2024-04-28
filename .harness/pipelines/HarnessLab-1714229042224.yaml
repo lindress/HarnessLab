@@ -25,7 +25,7 @@ pipeline:
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
                     connectorRef: account.harnessImage
-                    repo: awesley/helloharness
+                    repo: annewesley/helloharness
                     tags:
                       - hello
           platform:
