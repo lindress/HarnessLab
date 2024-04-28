@@ -27,7 +27,7 @@ pipeline:
                     connectorRef: account.harnessImage
                     repo: annewesley/helloharness
                     tags:
-                      - hello
+                      - latest
           platform:
             os: Linux
             arch: Amd64
