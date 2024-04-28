@@ -14,7 +14,7 @@ spec:
         app: harness-lab
     spec:
       containers:
-      - image: helloHarness:1.0
+      - image: annewesley/helloharness:latest
         name: harness-lab
         ports:
         - containerPort: 80
