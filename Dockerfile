@@ -4,4 +4,4 @@ WORKDIR /usr/local/bin
 
 COPY hello.py ./
 
-CMD ["./hello.py"]
+CMD ["python", "./hello.py"]
