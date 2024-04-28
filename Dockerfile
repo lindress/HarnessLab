@@ -2,6 +2,8 @@ FROM python:latest
 
 WORKDIR /usr/local/bin
 
-COPY hello.py ./
+COPY Pokemon.py ./
 
-CMD ["python", "./hello.py"]
+COPY Pokemon/ ./Pokemon
+
+CMD ["python", "Pokemon.py"]
